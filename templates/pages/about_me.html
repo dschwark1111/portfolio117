@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me {% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<section class="about-section">
+    <div class="img-container center">
+        <img id="about-img" src="{% static './img/aboutme2.png' %}">
+    </div>
+
+    <div class="description-container center">
+        <div class="center" style="flex-direction: column;">
+            <h2 style="padding-top: 3rem;">Dorothy</h2>
+            <h1>UX/UI Designer & Digital Strategist </h1>
+
+        </div>
+
+        <p>
+            Hey welcome to my little corner of the internet! My name is Dorothy, but everyone calls me Dottie. I am a UX/UI
+            Designer with a background in Digital Marketing, which gives me a unique edge in creating designs that resonate with
+            your customers while improving their experience through design. My research experience has refined my problem-solving
+            skills and user insights while helping me give businesses a competitive advantage with proper SEO and SEM.
+            <br>
+            <br>
+            I am constantly seeking new ways to learn and grow through real-world experiences. My skills include user experience
+            design, interaction design, user research, strategic positioning, SEO, SEM, social media strategy, problem-solving, and
+            organization. Let's work together to create a seamless user experience while increasing your business growth and reach
+            using tools such as Figma, Sketch and ClickUp.
+        </p>
+        <div class="skills-list center">
+            <h2>Skills</h2>
+            <div class="skills center">
+                <label>HTML</label>
+                <label>CSS</label>
+                <label>Javascript</label>
+                <label>UX/UI Design</label>
+                <label>SEO</label>
+                <label>SEM</label>
+                <label>Management</label>
+                <label>Social Media Strategy</label>
+                <label>Stategic Positioning</label>
+                <label>Business Organization</label>
+            </div>
+        </div>
+
+    </div>
+<div id="section-2" class="break"></div>
+</section>
+
+{% endblock content %}
