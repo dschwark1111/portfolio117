@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.core.mail import send_mail
+from django.template.loader import render_to_string
 
 def home(request):
     return render(request, 'pages/about_me.html')
@@ -15,8 +16,10 @@ def contact(request):
             message = form.cleaned_data['message']
             email_from = form.cleaned_data['email']
 
+            html = render_to_string("pages/email.html", request.POST)
 
-            send_mail("Message from" + name, message, email_from, ['dorothy.schwark@gmail.com'])
+
+            send_mail("Message from" + name, message, email_from, ['dorothy.schwark@gmail.com'], html_message=html)
 
             return redirect('home')
 
