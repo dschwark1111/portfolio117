@@ -38,7 +38,7 @@
             <div class="nav-link center">
                 <a href="{% url 'home' %}">About me</a>
                 <a href="{% url 'projects' %}">Projects</a>
-                <a href="#section-3">Education</a>
+                <a href="{% url 'experience_list' %}">Education</a>
                 <a href="{% url 'contact' %}">Contact</a>
             </div>
         </nav>
@@ -58,7 +58,7 @@
             
             <a href="{% url 'home' %}">About Me</a>
             <a href="#section-2">Projects</a>
-            <a href="#section-3">Experience/Education</a>
+            <a href="{% url 'experience_list' %}">Education</a>
             <a href="{% url 'contact' %}">Contact</a>
         </nav>
         <div class="connectsection">
